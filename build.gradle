@@ -6,7 +6,7 @@ plugins {
 
 apply plugin: 'war'
 
-group ''
+group 'com.project.studentmanagement'
 version '1.0-SNAPSHOT'
 
 war {
