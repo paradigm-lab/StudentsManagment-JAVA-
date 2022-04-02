@@ -1,0 +1,6 @@
+CREATE TABLE students (
+	id BIGSERIAL NOT NULL PRIMARY KEY,
+	name VARCHAR(45),
+	mobile BIGINT(12),
+	country VARCHAR(45)
+);
