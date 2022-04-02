@@ -1,20 +1,15 @@
 Maven/Gradlew dependencies:
-	-> Spring webMVC
-	-> Spring JDBC
-	-> Postgresql connector
-	-> jstl
-	-> Servlet API 
+	``Spring webMVC``
+	``Spring JDBC``
+	``Postgresql connector``
+	``jstl``
+	``Servlet API``
 
 
-Configuration of the Postgres database:
-	Table Name: students
+Database Configuration (Postgres Database), For the SQL statement to create 
+the table in the database is in the ``students.sql`` file.
 	
-	Column names:
-				id -> INT, Primary key 
-				name -> VARCHAR(45) NOT NULL
-				mobile -> BIGINT(12)
-				country -> VARCHAR(45)
+	Column names: id, name, mobile, country 
 
-
-Nt: Whenever you're going to create a table make sure the table name is plural as a good naming conversion.
+Note: Whenever you're going to create a table make sure the table name is plural as a good naming conversion.
 
