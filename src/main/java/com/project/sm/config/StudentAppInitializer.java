@@ -11,7 +11,10 @@ public class StudentAppInitializer extends AbstractAnnotationConfigDispatcherSer
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[0];
+
+        Class[] configFiles = {StudentAppConfig.class};
+
+        return configFiles;
     }
 
     @Override
