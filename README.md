@@ -1,9 +1,9 @@
 # Maven/Gradlew dependencies:
-	``Spring webMVC``
-	``Spring JDBC``
-	``Postgresql connector``
-	``jstl``
-	``Servlet API``
+	Spring webMVC
+	Spring JDBC
+	Postgresql connector
+	jstl
+	Servlet API
 
 
 # Database Configuration (Postgres Database):
