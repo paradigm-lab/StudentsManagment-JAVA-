@@ -9,3 +9,14 @@
 * Create controller (StudentController)
 * Design a view (student-list.jsp)
 
+## Get the data from database (Get all the students)
+* Create a POJO or a domain class called Student
+  * Student
+    * -> id
+    * -> name
+    * -> mobile
+    * -> country
+
+
+* Create a DAO called `StudentDAO()` Interface
+  * `List<Student> loadStudent();` method 
