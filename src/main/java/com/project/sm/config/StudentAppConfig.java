@@ -15,7 +15,7 @@ public class StudentAppConfig {
     @Bean
     public InternalResourceViewResolver viewResolver(){
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-        viewResolver.setPrefix("/WEB-INF/views/");
+        viewResolver.setPrefix("/views/");
         viewResolver.setSuffix(".jsp");
 
         return viewResolver;
