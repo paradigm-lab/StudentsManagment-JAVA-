@@ -4,6 +4,7 @@ import com.project.sm.DAO.StudentDAO;
 import com.project.sm.api.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -19,10 +20,12 @@ public class StudentController {
 
     //@GetMapping("/showStudent")
     @RequestMapping(value = "/showStudent", method = RequestMethod.GET)
-    public String showStudentList() {
+    public String showStudentList(Model model) {
 
         // Call the DAO method to get the data
         List<Student> studentList = studentDAO.loadStudent();
+
+        model.addAttribute("students", studentList);
 
         return "student-list";
     }
