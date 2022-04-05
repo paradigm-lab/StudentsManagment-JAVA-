@@ -9,5 +9,6 @@
 <body>
         <i>Student Data Coming Soon....</i>
         <!-- ModelAttribute: students -->
+        ${students}
 </body>
 </html>
