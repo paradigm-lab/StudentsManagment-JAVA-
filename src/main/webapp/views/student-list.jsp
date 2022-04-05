@@ -1,4 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -7,8 +8,32 @@
     <title>Student Management</title>
 </head>
 <body>
-        <i>Student Data Coming Soon....</i>
-        <!-- ModelAttribute: students -->
-        ${students}
+
+<h1 align="center"> Student Management System </h1>
+
+<div align = "center">
+    <table border="1">
+        <thead>
+            <tr>
+                <td>id</td>
+                <td>name</td>
+                <td>mobile</td>
+                <td>country</td>
+            </tr>
+        </thead>
+
+        <!-- with each iteration I want to create a new row for my table -->
+        <c:forEach var="student" items="${students}">
+            <tr>
+                <td>${student.id}</td>
+                <td>${student.name}</td>
+                <td>${student.mobile}</td>
+                <td>${student.country}</td>
+            </tr>
+        </c:forEach>
+
+    </table>
+</div>
+
 </body>
 </html>
