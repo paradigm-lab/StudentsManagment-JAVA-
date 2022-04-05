@@ -20,3 +20,6 @@
 
 * Create a DAO called `StudentDAO()` Interface
   * `List<Student> loadStudent();` method 
+
+
+* Implementing a Data Source which will help us to connect to the DataBase(DB) by using the JdbcTemplate which will provides utility methods to talk to the database.
