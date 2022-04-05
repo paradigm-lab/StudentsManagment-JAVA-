@@ -23,3 +23,6 @@
 
 
 * Implementing a Data Source which will help us to connect to the DataBase(DB) by using the JdbcTemplate which will provides utility methods to talk to the database.
+
+
+* Designing a Dynamic HTML Table which will select all the student from the Database table to my model and sending the model into my view in a tabular format.
