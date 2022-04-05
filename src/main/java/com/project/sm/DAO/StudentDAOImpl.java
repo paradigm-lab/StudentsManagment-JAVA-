@@ -16,7 +16,7 @@ import java.util.List;
 public class StudentDAOImpl implements StudentDAO{
 
     @Autowired
-    JdbcTemplate jdbcTemplate;
+    private JdbcTemplate jdbcTemplate;
 
     @Override
     public List<Student> loadStudent() {
