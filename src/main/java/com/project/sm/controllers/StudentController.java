@@ -25,6 +25,12 @@ public class StudentController {
         // Call the DAO method to get the data
         List<Student> studentList = studentDAO.loadStudent();
 
+        for (Student tempStudent : studentList) {
+
+            System.out.println(tempStudent);
+
+        }
+
         model.addAttribute("students", studentList);
 
         return "student-list";
