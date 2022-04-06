@@ -54,6 +54,9 @@ public class StudentController {
         // Write the logic to save the data(studentDTO) to the database
         System.out.println(student);
 
+        // Do a DAO call to save the students
+        studentDAO.saveStudent(student);
+
         return "student saved...";
     }
 }
