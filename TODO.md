@@ -10,8 +10,8 @@
 * Design a view (student-list.jsp)
 
 ## Get the data from database (Get all the students)
-* Create a POJO or a domain class called Student
-  * Student
+* Create a POJO, domain, BO, Entity, VO class called Student
+  * Student (Using this class as my Data Access layer(DAO) and DTO)
     * -> id
     * -> name
     * -> mobile
@@ -31,5 +31,8 @@
 ## Insert a student record to the student table
 * Create a controller handler method to display the add-student.jsp
 
+
 * Create a form(jsp) [add-student.jsp]
 
+
+* Controller -----> DAO ------> Database(DB)
