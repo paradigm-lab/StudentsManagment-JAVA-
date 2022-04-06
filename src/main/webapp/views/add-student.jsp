@@ -12,7 +12,7 @@
 
 <div align="center">
     <!-- Create a spring form where the user can enter data -->
-    <form:form action="save-student" modelAttribute="student" method="GET">
+    <form:form action="save-student" modelAttribute="student" method="POST">
 
         <label>Name: </label>
         <form:input path="name" />

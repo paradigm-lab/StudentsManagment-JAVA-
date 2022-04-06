@@ -5,6 +5,7 @@ import com.project.sm.api.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -47,8 +48,7 @@ public class StudentController {
     }
 
 
-    @ResponseBody
-    @RequestMapping(value = "/save-student", method = RequestMethod.GET)
+    @RequestMapping(value = "/save-student", method = RequestMethod.POST)
     public String saveStudent (Student student){
 
         // Write the logic to save the data(studentDTO) to the database
@@ -57,6 +57,16 @@ public class StudentController {
         // Do a DAO call to save the students
         studentDAO.saveStudent(student);
 
-        return "student saved...";
+        return "redirect:/thankyou";
     }
+
+
+    @ResponseBody
+    @GetMapping("/thankyou")
+    public String thankYou() {
+
+        return "Thank you... Your record has been added to the database";
+    }
+
+
 }
