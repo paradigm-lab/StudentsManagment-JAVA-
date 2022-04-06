@@ -34,7 +34,17 @@ public class StudentDAOImpl implements StudentDAO{
 
     @Override
     public void saveStudent(Student student) {
-        
+        // Write the logic to store the student object into the database
+
+        // Object is the parent for every class in java so we can store any kind of object inside that!!
+        Object[] sqlParameters = {student.getName(), student.getMobile(), student.getCountry()};
+
+        String sql = "INSERT INTO students (name, mobile, country) VALUE (?, ?, ?)";
+
+        jdbcTemplate.update(sql, sqlParameters);
+
+        System.out.println("1 record updated....");
+
     }
 
 }
