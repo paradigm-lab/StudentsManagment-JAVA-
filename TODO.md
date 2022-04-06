@@ -36,3 +36,6 @@
 
 
 * Controller -----> DAO ------> Database(DB)
+
+## Fixing a Bug (POST-REDIRECT-GET (PRG) Pattern)
+* When the user create a resource by POST then when we refresh the page it's going to create a new resource or object which is cost full so to fix the error we use the POST REDIRECT GET (PRG). We use this approach because loading is not costlier than creating.

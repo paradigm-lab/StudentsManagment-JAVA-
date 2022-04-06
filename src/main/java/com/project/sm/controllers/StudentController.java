@@ -57,16 +57,17 @@ public class StudentController {
         // Do a DAO call to save the students
         studentDAO.saveStudent(student);
 
-        return "redirect:/thankyou";
+        return "redirect:/showStudent";
     }
 
 
+    /*
     @ResponseBody
     @GetMapping("/thankyou")
     public String thankYou() {
 
         return "Thank you... Your record has been added to the database";
-    }
+    } */
 
 
 }
