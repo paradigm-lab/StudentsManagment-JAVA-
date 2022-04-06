@@ -11,6 +11,10 @@
 
 <h1 align="center"> Student Management System </h1>
 
+<form action="showAddStudentPage">
+    <input type="submit" value="ADD" />
+</form>
+
 <div align = "center">
     <table border="1">
         <thead>
