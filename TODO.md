@@ -26,3 +26,10 @@
 
 
 * Designing a Dynamic HTML Table which will select all the student from the Database table to my model and sending the model into my view in a tabular format.
+
+ 
+## Insert a student record to the student table
+* Create a controller handler method to display the add-student.jsp
+
+* Create a form(jsp) [add-student.jsp]
+
