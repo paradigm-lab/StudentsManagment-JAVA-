@@ -39,7 +39,7 @@ public class StudentDAOImpl implements StudentDAO{
         // Object is the parent for every class in java so we can store any kind of object inside that!!
         Object[] sqlParameters = {student.getName(), student.getMobile(), student.getCountry()};
 
-        String sql = "INSERT INTO students (name, mobile, country) VALUE (?, ?, ?)";
+        String sql = "INSERT INTO students (name, mobile, country) VALUES (?, ?, ?)";
 
         jdbcTemplate.update(sql, sqlParameters);
 
