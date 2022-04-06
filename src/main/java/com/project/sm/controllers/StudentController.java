@@ -2,6 +2,7 @@ package com.project.sm.controllers;
 
 import com.project.sm.DAO.StudentDAO;
 import com.project.sm.api.Student;
+import com.project.sm.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,20 +18,21 @@ import java.util.List;
 public class StudentController {
 
     @Autowired
-    StudentDAO studentDAO;
+    private StudentService studentService;
 
     //@GetMapping("/showStudent")
     @RequestMapping(value = "/showStudent", method = RequestMethod.GET)
     public String showStudentList(Model model) {
 
-        // Call the DAO method to get the data
-        List<Student> studentList = studentDAO.loadStudent();
+        // Call the service to get the data
+        List<Student> studentList = studentService.loadStudent();
 
+        /*
         for (Student tempStudent : studentList) {
 
             System.out.println(tempStudent);
 
-        }
+        } */
 
         model.addAttribute("students", studentList);
 
@@ -48,14 +50,15 @@ public class StudentController {
     }
 
 
+    // Data Binding is done in this method
     @RequestMapping(value = "/save-student", method = RequestMethod.POST)
     public String saveStudent (Student student){
 
         // Write the logic to save the data(studentDTO) to the database
         System.out.println(student);
 
-        // Do a DAO call to save the students
-        studentDAO.saveStudent(student);
+        // Do a service call to save the students
+        studentService.saveStudent(student);
 
         return "redirect:/showStudent";
     }
