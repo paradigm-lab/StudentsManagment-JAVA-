@@ -2,11 +2,9 @@ package com.project.sm.controllers;
 
 import com.project.sm.DAO.StudentDAO;
 import com.project.sm.api.Student;
-import com.project.sm.api.StudentDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -41,9 +39,9 @@ public class StudentController {
     @RequestMapping(value = "/showAddStudentPage", method = RequestMethod.GET)
     public String addStudent(Model model) {
 
-        StudentDTO studentDTO = new StudentDTO();
+        Student student = new Student();
 
-        model.addAttribute("student", studentDTO);
+        model.addAttribute("student", student);
 
         return "add-student";
     }
