@@ -48,3 +48,12 @@
   * The service layer is there to provide logic to operate on the data sent to and from the DAO and the client.
  
 Controllers --> Service --> DAO --> Database (DB) 
+
+## Update a Student record
+* Modify the student-list page and show a update link next to each student.
+
+
+* Create a controller handler method for update (/updateStudent)
+
+
+* Show the user the add-student form (add_student.jsp)
