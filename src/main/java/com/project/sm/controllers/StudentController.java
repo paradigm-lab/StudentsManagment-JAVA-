@@ -6,10 +6,7 @@ import com.project.sm.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -63,6 +60,15 @@ public class StudentController {
         return "redirect:/showStudent";
     }
 
+
+    @RequestMapping(value = "/updateStudent", method = RequestMethod.GET)
+    public String updateStudent(@RequestParam("userId") int id, @ModelAttribute("student") Student student) {
+
+        // We should give the user object who clicked on the update button
+        System.out.println("Looking data for the student having id :" + id);
+
+        return "add-student";
+    }
 
     /*
     @ResponseBody
