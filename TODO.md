@@ -46,4 +46,5 @@
 
 * Why we need the service layer ??
   * The service layer is there to provide logic to operate on the data sent to and from the DAO and the client.
-  
+ 
+Controllers --> Service --> DAO --> Database (DB) 
