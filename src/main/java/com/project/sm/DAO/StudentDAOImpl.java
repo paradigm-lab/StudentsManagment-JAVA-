@@ -43,7 +43,7 @@ public class StudentDAOImpl implements StudentDAO{
 
         jdbcTemplate.update(sql, sqlParameters);
 
-        System.out.println("1 record updated....");
+        System.out.println("1 record inserted....");
 
     }
 
