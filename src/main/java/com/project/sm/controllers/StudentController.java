@@ -62,10 +62,15 @@ public class StudentController {
 
 
     @RequestMapping(value = "/updateStudent", method = RequestMethod.GET)
-    public String updateStudent(@RequestParam("userId") int id, @ModelAttribute("student") Student student) {
+    public String updateStudent(@RequestParam("userId") int id, Model model){
 
         // We should give the user object who clicked on the update button
         System.out.println("Looking data for the student having id :" + id);
+
+        Student theStudent = studentService.getStudent(id);
+        System.out.println(theStudent);
+
+        model.addAttribute("student", theStudent);
 
         return "add-student";
     }
