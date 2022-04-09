@@ -86,6 +86,15 @@ public class StudentController {
         return "add-student";
     }
 
+    @RequestMapping(value = "/deleteStudent", method = RequestMethod.GET)
+    public String deleteStudent(@RequestParam("userId") int id){
+
+        // Capture the id of the student whom you are trying to delete
+        // Once captured the id, do a service call to delete the student
+        studentService.deleteStudent(id);
+
+        return "add-student";
+    }
     /*
     @ResponseBody
     @GetMapping("/thankyou")
