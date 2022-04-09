@@ -93,7 +93,7 @@ public class StudentController {
         // Once captured the id, do a service call to delete the student
         studentService.deleteStudent(id);
 
-        return "add-student";
+        return "redirect:/showStudent";
     }
     /*
     @ResponseBody
