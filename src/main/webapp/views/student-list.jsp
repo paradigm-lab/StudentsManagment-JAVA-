@@ -34,7 +34,7 @@
                 <td>${student.mobile}</td>
                 <td>${student.country}</td>
                 <td><a href="updateStudent?userId=${student.id}">Update</a><td>
-                <td><a href="deleteStudent?userId=${student.id}">Delete</a><td>
+                <td><a href="deleteStudent?userId=${student.id}" onclick="if (! (confirm('Are you sure you want to delete this Student') ) ) return false">Delete</a><td>
             </tr>
         </c:forEach>
 
