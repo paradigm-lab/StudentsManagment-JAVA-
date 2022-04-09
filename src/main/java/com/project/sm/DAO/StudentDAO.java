@@ -12,4 +12,6 @@ public interface StudentDAO {
 
     Student getStudent(int id);
 
+    void update(Student student);
+
 }
