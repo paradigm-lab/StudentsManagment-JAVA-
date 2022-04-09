@@ -57,3 +57,6 @@ Controllers --> Service --> DAO --> Database (DB)
 
 
 * Show the user the add-student form (add_student.jsp)
+
+
+* Doing a conditional check to if a user has id then we update then if the user doesn't have the id we insert the data to the Database(DB).
