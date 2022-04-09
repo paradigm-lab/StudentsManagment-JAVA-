@@ -54,8 +54,19 @@ public class StudentController {
         // Write the logic to save the data(studentDTO) to the database
         System.out.println(student);
 
-        // Do a service call to save the students
-        studentService.saveStudent(student);
+        // Doing a condition check
+        // if the user does have an id -> do an update
+        // if the user doesn't have an id then do an insert
+
+        if (student.getId() == 0) {
+            // Do a service call to save the students
+            // Insert a new record
+            studentService.saveStudent(student);
+        }   else {
+            // if id is not 0, if we already have and id do an update
+            studentService.update(student);
+        }
+
 
         return "redirect:/showStudent";
     }
