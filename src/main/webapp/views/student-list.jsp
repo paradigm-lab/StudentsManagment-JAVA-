@@ -6,6 +6,7 @@
 <html>
 <head>
     <title>Student Management</title>
+    <link rel"stylesheet" type="text/css" href="/resources/css/my-style-sheet.css">
 </head>
 <body>
 
