@@ -6,7 +6,7 @@
 <html>
 <head>
     <title>Student Management</title>
-    <link rel"stylesheet" type="text/css" href="/URLToReachResourcesFolder/css/my-style-sheet.css">
+    <link rel="stylesheet" type="text/css" href="/URLToReachResourcesFolder/css/my-style-sheet.css">
 </head>
 <body>
 
