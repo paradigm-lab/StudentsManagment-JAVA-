@@ -5,11 +5,12 @@
 <html>
 <head>
     <title>Student Management</title>
+    <link rel="stylesheet" type="text/css" href="/URLToReachResourcesFolder/css/my-style-sheet.css">
     <link rel="stylesheet" type="text/css" href="/URLToReachResourcesFolder/css/add-student.css" />
 </head>
 <body>
 
-<h3 align="center"> Add Student </h3>
+<h1 align="center"> Add Student </h1>
 
 <div align="center">
     <!-- Create a spring form where the user can enter data -->
