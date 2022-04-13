@@ -40,6 +40,9 @@
         </c:forEach>
 
     </table>
+
+    <img alt="Student Photo" src="/URLToReachImagesFolder/studentTwo.jpeg" />
+
 </div>
 
 </body>

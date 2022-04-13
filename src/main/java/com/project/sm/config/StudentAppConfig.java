@@ -49,6 +49,7 @@ public class StudentAppConfig implements WebMvcConfigurer {
         return dataSource;
     }
 
+    // Adding the Static resources by registry the Handler and Locations
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry
