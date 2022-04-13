@@ -8,7 +8,7 @@
     <title>Student Management</title>
     <link rel="stylesheet" type="text/css" href="/URLToReachResourcesFolder/css/my-style-sheet.css">
 </head>
-<body>
+<body class="myFonts">
 
 <h1 align="center"> Student Management System </h1>
 
