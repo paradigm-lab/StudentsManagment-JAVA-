@@ -6,3 +6,16 @@ h1 {
     font-size: 50 px;
     font-family: Monaco;
 }
+
+.myButton {
+    color: white;
+    background-color: green;
+    border: 2px solid black;
+    font-size: 24px;
+    padding-top: 10px 10px 10px 10px;
+    transition-duration:0.5s;
+}
+.myButton:hover{
+    background-color: yellow;
+    color: black;
+}

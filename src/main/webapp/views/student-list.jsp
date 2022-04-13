@@ -13,7 +13,7 @@
 <h1 align="center"> Student Management System </h1>
 
 <form action="showAddStudentPage">
-    <input type="submit" value="ADD" />
+    <input type="submit" value="ADD" class="myButton" />
 </form>
 
 <div align = "center">
