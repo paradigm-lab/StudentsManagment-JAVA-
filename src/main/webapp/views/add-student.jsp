@@ -5,6 +5,7 @@
 <html>
 <head>
     <title>Student Management</title>
+    <link rel="stylesheet" type="text/css" href="/URLToReachResourcesFolder/css/add-student.css" />
 </head>
 <body>
 
