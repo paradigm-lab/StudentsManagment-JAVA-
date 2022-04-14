@@ -6,18 +6,24 @@
 <html>
 <head>
     <title>Student Management</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/URLToReachResourcesFolder/css/my-style-sheet.css">
 </head>
+
 <body class="myFonts">
 
+<div class="container">
 <h1 align="center"> Student Management System </h1>
 
+<!-- This is my add button -->
 <form action="showAddStudentPage">
-    <input type="submit" value="ADD" class="myButton" />
+    <input type="submit" value="ADD"  class="btn btn-outline-success" />
 </form>
 
-<div align = "center">
-    <table border="1">
+    <br/>
+
+    <table border="1" class="table table-striped">
         <thead>
             <tr>
                 <td>id</td>
@@ -41,7 +47,8 @@
 
     </table>
 
-    <img alt="Student Photo" src="/URLToReachImagesFolder/studentTwo.jpeg" />
+    <!-- This is my image -->
+    <center><img alt="Student Photo" src="/URLToReachImagesFolder/studentTwo.jpeg" /></center>
 
 </div>
 
