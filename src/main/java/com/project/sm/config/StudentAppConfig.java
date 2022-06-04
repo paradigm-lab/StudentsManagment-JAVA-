@@ -43,7 +43,7 @@ public class StudentAppConfig implements WebMvcConfigurer {
         // Set the DB info to the dataSource object
         dataSource.setUsername("student");
         dataSource.setPassword("student");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/student?useSSL=false");
+        dataSource.setUrl("jdbc:postgresql://postgres-standalone:5432/student?useSSL=false");
         dataSource.setDriverClassName("org.postgresql.Driver");
 
         return dataSource;
